@@ -1,0 +1,184 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-title: #464646;
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+   --font-title: font-family: "Raleway", sans-serif;
+   font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none; padding-inline-start: 0; padding-inline-end: 0; margin-block-start: 0; margin-block-end: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+.menu__title::before{
+    content: url(assets/vector.png);
+}
+.menu__title{
+    font-size: 1.6rem;
+    color: var(--cor-de-title);
+}
+
+section.menu{
+    padding: 32px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul.menu__list{
+    display: flex;
+}
+
+li.menu__list__item{
+    margin-left: 3.2rem;
+    color: var(--cor-de-title);
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+
+/*Sessão Title*/
+h3.title__subsection{
+    font-size: 2.2rem;
+    font-weight: 400;
+    height: auto;
+    line-height: auto;
+    text-align: left;
+}
+section.title{
+    
+}
+div.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 152px auto;
+    text-align: start;
+    color: var(--cor-de-title);
+}
+
+/*Sessão About*/
+h2.title__bio{
+    font-size: 5.2rem;
+    font-weight: 600;
+    text-align: left;
+    height: auto;
+    line-height: auto;
+}
+ul.title__network{
+    display: flex;
+    gap: 32px;
+    font-size: 1.6rem;
+}
+ul.title__network__item{
+
+}
+
+section.about{
+
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+
+}
+
+/* experiência*/
+
+section.experience{
+
+}
+
+/*Contato*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
