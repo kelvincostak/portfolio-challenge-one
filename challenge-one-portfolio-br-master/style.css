@@ -9,6 +9,7 @@ coloque nas sessões indicadas*/
     --cor-de-title: #464646;
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --cor-de-bloco: #EAF2FD;
    --font-title: font-family: "Raleway", sans-serif;
    font-size: 62.5%;
 }
@@ -46,19 +47,35 @@ https://en.bem.info/methodology/quick-start/*/
 .menu__title::before{
     content: url(assets/vector.png);
 }
-.menu__title{
+h3.menu__title{
     font-size: 1.6rem;
     color: var(--cor-de-title);
+    align-items: center;
+    text-wrap: nowrap;
+
 }
 
+
+div.all{
+    font-family: var(--font-title);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 section.menu{
-    padding: 32px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 32px auto;
+    width: auto;
 }
 ul.menu__list{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-wrap: nowrap;
+    margin-left: 360px;
 }
 
 li.menu__list__item{
@@ -67,7 +84,10 @@ li.menu__list__item{
     font-size: 1.6rem;
     font-weight: 450;
 }
-
+img.title__profile{
+    width: 368px;
+    height: 368px;
+}
 /*Sessão Title*/
 h3.title__subsection{
     font-size: 2.2rem;
@@ -107,7 +127,62 @@ ul.title__network__item{
 }
 
 section.about{
+    background-color: var(--cor-de-bloco);
+    color: var(--cor-de-title);
+    width: 100%;
+    
+}
+div.about__container{
+    font-size: 1.6rem;
+    padding: 64px 152px;
+}
+div.about__container > img{
+    margin-top: 16px;
+}
 
+h3.about__title{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--cor-de-title);
+}
+p.about__paragraph{
+    width: 751px;   
+    margin: 16px 0px;
+}
+
+section.skills, section.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+section.hobbies{
+    margin: 88px 0px ;
+}
+h3.skills__title, h3.hobbies__title, h2.academic__title{
+    font-size: 3.2rem;
+    color: var(--cor-de-title);
+}
+div.skills__line, div.hobbies__line{
+    display: flex;
+    margin: 0 auto;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+    
+div.skills__box, div.hobbies__box{
+    background: white;    
+    width: 176px;
+    height: 174px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 16px;
+}
+li.skills__name, li.hobbies__name{
+    margin-top: 8px;
+    font-size: 1.6rem;
+    color: var(--cor-de-title);
+    font-weight: 600;
 }
 
 /*Sessão Hobbies*/
@@ -117,29 +192,195 @@ section.hobbies{
 }
 
 /* Experiência Acadêmica*/
+h2.academic__title{
+    text-align: center;
+}
 
 section.academic{
+    background: var(--cor-de-bloco);
+    width: 88vw;
+    justify-content: center;
+    align-items: center;
+    padding: 82px;
+}
 
+div.academic__courses{
+    display: flex;
+    margin: 32px 152px;
+    gap: 16px;
+
+}
+
+div.academic__courses__box{
+    background: white;
+    width: 368px;
+    height: 286px;
+    margin: 0 auto;
+}
+ul.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+}
+li.academic__courses__item__subtitle{
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--cor-de-title);
+}
+li.academic__courses__item__title{
+    font-size: 2.2rem;
+    font-family: var(--font-title);
+    text-align: center;
+    color: var(--cor-de-title);
 }
 
 /* experiência*/
 
 section.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+
+}
+h2.experience__section__title{
+    text-align: center;
+    font-size: 3.2rem;
+    color: var(--cor-de-title);
+}
+img.experience__img{
+    width: 772px;
+    height: 360px;
+}
+div.experiencie__box{
+    display: flex;
+    width: 1136px;
+    margin-top: 64px;
+}
+div.experiencie__box:nth-child(1), div.experiencie__box:nth-child(3){
+    flex-direction: row-reverse;
+
+}
+img.experience__img__aluraplay{
+    width: 570px;
+    height: 300px;
+    border-radius: 16px;
+    margin-left: 24px;
+}
+div.experience__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+h2.experience__title{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--cor-de-title);
+}
+h3.experience__text{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--cor-de-title);
+}
+button.experiencia__botao--repo{
+    width: 116px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+button.experiencia__botao--demo{
+    width: 116px;
+    height: 51px;
+    background: #2A7AE4;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    margin-left: 16px;
 
 }
 
 /*Contato*/
-
-section.formcontato{
-
+div.formcontato--esquerda{
+    display: flex;
+    align-items: center;
 }
 
+section.formcontato{
+    margin-top: 32px;
+    width: 98.9vw;
+    background: var(--cor-de-bloco);
+    font-family: var(--font-title);
+}
+div.formcontato__contacto{
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+}
+div.formcontato__text{
+    margin-left: 16px;
+    color: var(--cor-de-title);
+}
+h2.formcontato__title{
+    font-size: 3.2rem;
+}
+h3.formcontato__subtext{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: auto;
+}
+form.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px 0px;
+    font-family: var(--font-title);
+
+}
+input.formcontato__input{
+    height: 56px;
+    width: 600px;
+    border: none;
+    font-family: var(--font-title);
+    font-size: 1.6rem;
+    color: #464646;
+    padding: 4px;
+}
+input.formcontato__input::placeholder{
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 8px 0px 0px 12px;
+    position: absolute;
+    top: 0;
+}
+textarea.formcontato__textarea{
+    font-family: var(--font-title);
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 10px;
+}
+button.formcontato__botao{
+    width: 165px;
+    height: 51px;
+    background: #2A7AE4;
+    color: white;
+    padding: 16px;
+    font-family: var(--font-title);
+    
+}
 /*footeer*/
 
 section.footer{
-   
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.6rem;
+   text-align: center;
+   color: var(--cor-de-title);
 }
-
+a, button {
+    cursor: pointer;
+}
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
